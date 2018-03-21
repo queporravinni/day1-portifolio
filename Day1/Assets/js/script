@@ -1,0 +1,15 @@
+  		var aName = 'animated shake';
+		var aEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
+  		$(function(){
+  			
+  			$('img.perfil').on('click',function(){
+  				$(this).addClass('animated shake').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',function(){
+  					$(this).removeClass('animated shake');
+  				});
+  			});
+  		}); 
+  		var typed = new Typed('#typed', {
+    	stringsElement: '#typed-strings',
+    	loop:true
+  		});
